@@ -41,11 +41,11 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="box-border">
-      <div>
+    <main className="box-border">
+      <section>
         {/* NavBar */}
         <NavBar nav={navMenu} openNav={openNavMenu} closeNav={closeNavMenu} />
-        {/* Main */}
+        {/* Components */}
         <div className="relative top-[14vh]">
           <Hero />
           <About />
@@ -55,8 +55,8 @@ const HomePage = () => {
           <Contact />
           <Footer />
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 
