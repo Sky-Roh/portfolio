@@ -41,13 +41,13 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="overflow-x-hidden box-border">
+    <div className="box-border">
       <div>
         {/* NavBar */}
         <NavBar nav={navMenu} openNav={openNavMenu} closeNav={closeNavMenu} />
-        <Hero />
         {/* Main */}
-        <div className="relative z-[30]">
+        <div className="relative top-[14vh]">
+          <Hero />
           <About />
           <Services />
           <Skills />

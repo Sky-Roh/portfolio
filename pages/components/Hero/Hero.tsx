@@ -7,7 +7,6 @@ const Hero = () => {
   return (
     <>
       <div className="m-0 bg-[url('/images/hero-image.jpg')] bg-cover bg-center">
-        <div className="h-[12vh] flex items-center justify-center"></div>
         <div className="h-[88vh] min-h-[35rem] flex items-center justify-center">
           <Particle />
           <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center">

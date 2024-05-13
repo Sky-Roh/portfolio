@@ -1,5 +1,6 @@
 import { XMarkIcon } from "@heroicons/react/20/solid";
 import { useEffect } from "react";
+import Link from "next/link";
 interface Props {
   nav: boolean;
   closeNav: () => void;
@@ -26,11 +27,24 @@ const MobileNavBar = ({ nav, closeNav }: Props) => {
       className={`fixed ${navAnimation} transform inset-0 z-[1000000] bg-[#09101a] transition-all duration-200 md:hidden`}
     >
       <div className="w-[100vw] h-[100vh] flex flex-col items-center justify-center">
-        <div className="nav-link-mobile">Home</div>
-        <div className="nav-link-mobile">About</div>
-        <div className="nav-link-mobile">Project</div>
-        <div className="nav-link-mobile">Services</div>
-        <div className="nav-link-mobile">Contact</div>
+        <Link onClick={closeNav} href="/" className="nav-link-mobile">
+          Home
+        </Link>
+        <Link onClick={closeNav} href="#about" className="nav-link-mobile">
+          About
+        </Link>
+        <Link onClick={closeNav} href="#skills" className="nav-link-mobile">
+          Skills
+        </Link>
+        <Link onClick={closeNav} href="#projects" className="nav-link-mobile">
+          Project
+        </Link>
+        <Link onClick={closeNav} href="#services" className="nav-link-mobile">
+          Services
+        </Link>
+        <Link onClick={closeNav} href="#contact" className="nav-link-mobile">
+          Contact
+        </Link>
       </div>
       <div
         onClick={closeNav}

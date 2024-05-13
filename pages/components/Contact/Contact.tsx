@@ -88,7 +88,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="bg-[#26282d] pb-12 pt-16 md:pt-32 flex items-center justify-center"
+      className="scroll-m-[14vh] bg-[#26282d] pb-12 pt-16 md:pt-32 flex items-center justify-center"
     >
       <div
         data-aos="fade-up"

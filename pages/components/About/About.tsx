@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="h-[88vh] md:min-h-[36rem] min-h-[40rem] bg-[#26282d] pb-[3rem] pt-[4rem] md:pt-[8rem] flex items-center justify-center"
+      className="scroll-m-[14vh] h-[88vh] md:min-h-[36rem] min-h-[40rem] bg-[#26282d] pb-[3rem] pt-[4rem] md:pt-[8rem] flex items-center justify-center"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-[auto] gap-[3rem] items-center">
         <div>
