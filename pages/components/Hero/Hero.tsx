@@ -2,6 +2,7 @@ import React from "react";
 import Particle from "../Animations/Particles";
 import TypeAnimationEffect from "../Animations/TypeAnimationEffect";
 import Image from "next/image";
+import ProfileImg from "../../../public/images/profile-image.jpg";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 const Hero = () => {
   return (
@@ -12,7 +13,7 @@ const Hero = () => {
           <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center">
             <div>
               <h1 className="text-[1.5rem] md:text-[2rem] text-white font-bold">
-                Hi, I'M <span className="text-green-400">SKY ROH</span>
+                Hi, I&apos;M <span className="text-green-400">SKY ROH</span>
               </h1>
               <TypeAnimationEffect />
               <p className="mt-[2rem] text-[1.2rem] text-[#fffafa]">
@@ -32,11 +33,17 @@ const Hero = () => {
               data-aos="zoom-in"
               className="w-[30rem] h-[30rem] hidden lg:flex items-center rounded-full  bg-[#55e6a5] relative"
             >
+              {/* <image
+                src={ProfileImg}
+                className="w-full h-auto object-cover lazy" // Tailwind CSS utilities
+                loading="lazy"
+              /> */}
+
               <Image
-                src="/images/profile-image.jpg"
-                alt="user"
-                layout="fill"
-                className="object-cover rounded-full"
+                src={ProfileImg}
+                className="w-full h-auto object-cover" // Tailwind CSS utilities
+                loading="lazy"
+                alt="Profile Image" // Always include an alt attribute for accessibility
               />
             </div>
           </div>
