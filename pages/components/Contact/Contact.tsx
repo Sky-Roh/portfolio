@@ -86,7 +86,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-[#26282d] pb-12 pt-16 md:pt-32 flex items-center justify-center">
+    <div
+      id="contact"
+      className="bg-[#26282d] pb-12 pt-16 md:pt-32 flex items-center justify-center"
+    >
       <div
         data-aos="fade-up"
         className="grid grid-cols-1 md:grid-cols-2 w-4/5 md:gap-12 gap-1 mx-auto items-start"

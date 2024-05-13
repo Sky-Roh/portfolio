@@ -48,7 +48,7 @@ const HomePage = () => {
         <Hero />
         {/* Main */}
         <div className="relative z-[30]">
-          <About  />
+          <About />
           <Services />
           <Skills />
           <Projects />

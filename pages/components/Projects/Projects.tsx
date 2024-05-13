@@ -2,7 +2,10 @@ import Image from "next/image";
 
 const Projects = () => {
   return (
-    <div className="bg-[#02050a] pt-[4rem] md:pt-[8rem] pb-[1rem]">
+    <div
+      id="projects"
+      className="bg-[#02050a] pt-[4rem] md:pt-[8rem] pb-[1rem]"
+    >
       <h1 className="heading">
         Pro<span className="text-green-400">Ject</span>
       </h1>
