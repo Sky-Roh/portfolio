@@ -8,7 +8,7 @@ const Hero = () => {
     <>
       <div className="m-0 bg-[url('/images/hero-image.jpg')] bg-cover bg-center">
         <div className="h-[12vh] flex items-center justify-center"></div>
-        <div className="h-[88vh] flex items-center justify-center">
+        <div className="h-[88vh] min-h-[35rem] flex items-center justify-center">
           <Particle />
           <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center">
             <div>
@@ -29,7 +29,10 @@ const Hero = () => {
                 </button>
               </div>
             </div>
-            <div className="w-[30rem] h-[30rem] hidden lg:flex items-center rounded-full  bg-[#55e6a5] relative">
+            <div
+              data-aos="zoom-in"
+              className="w-[30rem] h-[30rem] hidden lg:flex items-center rounded-full  bg-[#55e6a5] relative"
+            >
               <Image
                 src="/images/profile-image.jpg"
                 alt="user"
