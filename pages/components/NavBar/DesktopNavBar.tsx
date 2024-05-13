@@ -8,7 +8,7 @@ interface Props {
 
 const DesktopNavBar = ({ openNav }: Props) => {
   return (
-    <nav className="w-full fixed z-[20] top-0 bg-[#141c27] h-[14vh] shadow-md">
+    <nav className="w-full fixed z-[1000] top-0 bg-[#141c27] h-[14vh] shadow-md">
       <main className="flex items-center justify-between w-[80%] mx-auto h-[100%]">
         <Link
           href="/"
