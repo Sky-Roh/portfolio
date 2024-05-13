@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
-import Image from "next/image";
+import Image from "next/legacy/image";
+import aboutImg from "../../../public/images/about-image-main.jpg";
 
 const About = () => {
   return (
@@ -35,11 +36,9 @@ const About = () => {
           className="relative lg:w-[30rem] sm:flex lg:h-[30rem] lg-mt-0 mx-auto md:mx-0 md:w-[18.2rem] md:h-[18.2rem] sm:w-[15rem] sm:h-[15rem] w-[10rem] h-[10rem] hidden "
         >
           <Image
-            src="/images/about-image-main.jpg"
+            src={aboutImg}
+            className="relative w-full h-full object-cover" // Tailwind CSS utilities
             alt="user"
-            layout="fill"
-            objectFit="contain"
-            className="relative z-[11] w-[100%] h-[100%] object-contain "
           />
           <div className="absolute w-[100%] h-[100%] z-[10] bg-[#55e6a5] md:top-[-2rem] md:right-[-2rem]  top-[-1rem] right-[-1rem]"></div>
         </div>

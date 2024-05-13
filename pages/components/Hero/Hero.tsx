@@ -1,7 +1,7 @@
 import React from "react";
 import Particle from "../Animations/Particles";
 import TypeAnimationEffect from "../Animations/TypeAnimationEffect";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import ProfileImg from "../../../public/images/profile-image.jpg";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 const Hero = () => {
@@ -33,17 +33,10 @@ const Hero = () => {
               data-aos="zoom-in"
               className="w-[30rem] h-[30rem] hidden lg:flex items-center rounded-full  bg-[#55e6a5] relative"
             >
-              {/* <image
-                src={ProfileImg}
-                className="w-full h-auto object-cover lazy" // Tailwind CSS utilities
-                loading="lazy"
-              /> */}
-
               <Image
                 src={ProfileImg}
-                className="w-full h-auto object-cover" // Tailwind CSS utilities
-                loading="lazy"
-                alt="Profile Image" // Always include an alt attribute for accessibility
+                className="w-full h-auto object-cover rounded-full" // Tailwind CSS utilities
+                alt="profile Image" // Always include an alt attribute for accessibility
               />
             </div>
           </div>

@@ -1,4 +1,5 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
+import project1Img from "../../../public/images/ClimbStation.png";
 
 const Projects = () => {
   return (
@@ -16,9 +17,8 @@ const Projects = () => {
             className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[12.5rem] md:h-[18.75rem]"
           >
             <Image
-              src="/images/ClimbStation.png"
+              src={project1Img}
               alt="portfolio project"
-              layout="fill"
               className="object-contain"
             />
           </div>
@@ -29,9 +29,8 @@ const Projects = () => {
             className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[12.5rem] md:h-[18.75rem]"
           >
             <Image
-              src="/images/ClimbStation.png"
+              src={project1Img}
               alt="portfolio project"
-              layout="fill"
               className="object-contain"
             />
           </div>
@@ -42,9 +41,8 @@ const Projects = () => {
             className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[12.5rem] md:h-[18.75rem]"
           >
             <Image
-              src="/images/ClimbStation.png"
+              src={project1Img}
               alt="portfolio project"
-              layout="fill"
               className="object-contain"
             />
           </div>
@@ -57,9 +55,8 @@ const Projects = () => {
             className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[12.5rem] md:h-[18.75rem]"
           >
             <Image
-              src="/images/ClimbStation.png"
+              src={project1Img}
               alt="portfolio project"
-              layout="fill"
               className="object-contain"
             />
           </div>
@@ -70,9 +67,8 @@ const Projects = () => {
             className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[12.5rem] md:h-[18.75rem]"
           >
             <Image
-              src="/images/ClimbStation.png"
+              src={project1Img}
               alt="portfolio project"
-              layout="fill"
               className="object-contain"
             />
           </div>
@@ -83,9 +79,8 @@ const Projects = () => {
             className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[12.5rem] md:h-[18.75rem]"
           >
             <Image
-              src="/images/ClimbStation.png"
+              src={project1Img}
               alt="portfolio project"
-              layout="fill"
               className="object-contain"
             />
           </div>
