@@ -37,7 +37,7 @@ const About = () => {
         >
           <Image
             src={aboutImg}
-            className="relative w-full h-full object-cover" // Tailwind CSS utilities
+            className="relative z-[20] w-full h-full object-cover" // Tailwind CSS utilities
             alt="user"
           />
           <div className="absolute w-[100%] h-[100%] z-[10] bg-[#55e6a5] md:top-[-2rem] md:right-[-2rem]  top-[-1rem] right-[-1rem]"></div>
