@@ -51,6 +51,7 @@ const Contact = () => {
       }
     }
   };
+
   // =====================================================================
 
   const [formData, setFormData] = useState<FormData>({
@@ -107,16 +108,7 @@ const Contact = () => {
     setErrors(newErrors);
     return isValid;
   };
-
-  // const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-  //   event.preventDefault();
-  //   if (validateForm()) {
-  //     console.log("Form Data:", formData);
-  //     alert("Form submitted successfully!");
-  //     setFormData({ name: "", email: "", message: "", phone: "" });
-  //     setErrors({ name: null, email: null, message: null, phone: null });
-  //   }
-  // };
+  console.log(Object.keys(errors));
 
   return (
     <div
@@ -148,7 +140,7 @@ const Contact = () => {
         <div className="flex flex-col justify-center text-white space-y-6">
           <form ref={form} onSubmit={sendEmail} noValidate>
             {/* Name input */}
-            <div className="relative w-full shadow-sm lg:mb-8 mb-5">
+            <div className="relative w-full shadow-sm ">
               <div className="absolute inset-0 pl-2 flex items-center pointer-events-none">
                 <UserCircleIcon className="h-5 w-5 text-gray-400" />
               </div>
@@ -166,9 +158,12 @@ const Contact = () => {
             {errors.name && (
               <p className="text-red-500 text-xs my-2">{errors.name}</p>
             )}
-
             {/* Email input */}
-            <div className="relative w-full shadow-sm lg:mb-8 mb-5">
+            <div
+              className={`relative w-full shadow-sm ${
+                !errors.name && "lg:mt-8 mt-5"
+              }`}
+            >
               <div className="absolute inset-0 pl-2 flex items-center pointer-events-none">
                 <EnvelopeIcon className="h-5 w-5 text-gray-400" />
               </div>
@@ -184,11 +179,15 @@ const Contact = () => {
               />
             </div>
             {errors.email && (
-              <p className="text-red-500 text-xs mb-3">{errors.email}</p>
+              <p className="text-red-500 text-xs my-2">{errors.email}</p>
             )}
 
             {/* Phone number input */}
-            <div className="relative w-full shadow-sm lg:mb-8 mb-5">
+            <div
+              className={`relative w-full shadow-sm ${
+                !errors.email && "lg:mt-8 mt-5"
+              }`}
+            >
               <div className="absolute inset-0 pl-2 flex items-center pointer-events-none">
                 <PhoneIcon className="h-5 w-5 text-gray-400" />
               </div>
@@ -203,11 +202,15 @@ const Contact = () => {
               />
             </div>
             {errors.phone && (
-              <p className="text-red-500 text-xs mb-3">{errors.phone}</p>
+              <p className="text-red-500 text-xs my-2">{errors.phone}</p>
             )}
 
             {/* Message textarea */}
-            <div className="relative w-full shadow-sm lg:mb-8 mb-5">
+            <div
+              className={`relative w-full shadow-sm ${
+                !errors.phone && "lg:mt-8 mt-5"
+              }`}
+            >
               <div className="absolute inset-y-0 left-0 pl-2 pt-4 pointer-events-none">
                 <ChatBubbleBottomCenterIcon className="h-5 w-5 text-gray-400" />
               </div>
@@ -224,7 +227,7 @@ const Contact = () => {
               ></textarea>
             </div>
             {errors.message && (
-              <p className="text-red-500 text-xs mb-3">{errors.message}</p>
+              <p className="text-red-500 text-xs my-2">{errors.message}</p>
             )}
 
             {/* Submit button */}
