@@ -3,7 +3,8 @@ import {
   EnvelopeIcon,
   PhoneIcon,
 } from "@heroicons/react/20/solid";
-import React, { useState } from "react";
+import React, { useState, useRef, FormEvent } from "react";
+import emailjs from "@emailjs/browser";
 
 interface FormData {
   name: string;
@@ -20,6 +21,37 @@ interface FormErrors {
 }
 
 const Contact = () => {
+  // EmailJS
+  // =====================================================================
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (validateForm()) {
+      setFormData({ name: "", email: "", message: "", phone: "" });
+      setErrors({ name: null, email: null, message: null, phone: null });
+      if (form.current) {
+        emailjs
+          .sendForm(
+            process.env.NEXT_PUBLIC_SERVICE_ID!,
+            process.env.NEXT_PUBLIC_TEMPLATE_ID!,
+            form.current,
+            process.env.NEXT_PUBLIC_PUBLIC_KEY
+          )
+          .then(
+            (result) => {
+              console.log(result.text, "SUCCESS! - Sent Message");
+            },
+            (error) => {
+              console.log("FAILED...", error.text);
+            }
+          );
+      }
+    }
+  };
+  // =====================================================================
+
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -75,15 +107,15 @@ const Contact = () => {
     return isValid;
   };
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    if (validateForm()) {
-      console.log("Form Data:", formData);
-      alert("Form submitted successfully!");
-      setFormData({ name: "", email: "", message: "", phone: "" });
-      setErrors({ name: null, email: null, message: null, phone: null });
-    }
-  };
+  // const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  //   event.preventDefault();
+  //   if (validateForm()) {
+  //     console.log("Form Data:", formData);
+  //     alert("Form submitted successfully!");
+  //     setFormData({ name: "", email: "", message: "", phone: "" });
+  //     setErrors({ name: null, email: null, message: null, phone: null });
+  //   }
+  // };
 
   return (
     <div
@@ -113,7 +145,7 @@ const Contact = () => {
         {/* ====================================================== */}
         {/* Form */}
         <div className="flex flex-col justify-center text-white space-y-6">
-          <form onSubmit={handleSubmit} noValidate>
+          <form ref={form} onSubmit={sendEmail} noValidate>
             {/* Name input */}
             <div className="relative w-full shadow-sm lg:mb-8 mb-5">
               <div className="absolute inset-0 pl-2 flex items-center pointer-events-none">
