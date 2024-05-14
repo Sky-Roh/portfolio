@@ -2,6 +2,7 @@ import {
   ChatBubbleBottomCenterIcon,
   EnvelopeIcon,
   PhoneIcon,
+  UserCircleIcon,
 } from "@heroicons/react/20/solid";
 import React, { useState, useRef, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
@@ -44,7 +45,7 @@ const Contact = () => {
               console.log(result.text, "SUCCESS! - Sent Message");
             },
             (error) => {
-              console.log("FAILED...", error.text);
+              console.log("FAILED...", error);
             }
           );
       }
@@ -149,7 +150,7 @@ const Contact = () => {
             {/* Name input */}
             <div className="relative w-full shadow-sm lg:mb-8 mb-5">
               <div className="absolute inset-0 pl-2 flex items-center pointer-events-none">
-                <PhoneIcon className="h-5 w-5 text-gray-400" />
+                <UserCircleIcon className="h-5 w-5 text-gray-400" />
               </div>
               <input
                 type="text"
