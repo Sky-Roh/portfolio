@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="scroll-m-[14vh] h-[88vh] md:min-h-[36rem] min-h-[40rem] bg-[#26282d] pb-[3rem] pt-[4rem] md:pt-[8rem] flex items-center justify-center"
+      className="scroll-m-[14vh] h-[88vh] lg:min-h-[38rem] md:min-h-[36rem] min-h-[40rem] bg-[#26282d] pb-[3rem] pt-[4rem] md:pt-[8rem] flex items-center justify-center"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-[auto] gap-[3rem] items-center">
         <div>
@@ -26,14 +26,10 @@ const About = () => {
               ducimus ullam aperiam.
             </p>
           </div>
-          <button className="px-[2rem] hover:bg-green-400 transition-all duration-200 py-[1rem] text-[1rem] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2">
-            <p>Download cv</p>
-            <ArrowDownTrayIcon className="w-[1.6re,] h-[1.7rem] text-black" />
-          </button>
         </div>
         <div
           data-aos="fade-left"
-          className="relative lg:w-[30rem] sm:flex lg:h-[30rem] lg-mt-0 mx-auto md:mx-0 md:w-[18.2rem] md:h-[18.2rem] sm:w-[15rem] sm:h-[15rem] w-[10rem] h-[10rem] hidden "
+          className="relative lg:w-[30rem] lg:h-[30rem] sm:flex lg-mt-0 mx-auto md:mx-0 md:w-[18.2rem] md:h-[18.2rem] sm:w-[14rem] sm:h-[14rem] w-[10rem] h-[10rem] hidden "
         >
           <Image
             src={aboutImg}
