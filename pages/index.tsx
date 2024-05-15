@@ -46,7 +46,7 @@ const HomePage = () => {
         {/* NavBar */}
         <NavBar nav={navMenu} openNav={openNavMenu} closeNav={closeNavMenu} />
         {/* Components */}
-        <div className="relative top-[14vh]">
+        <div className="relative top-[14vh] overflow-x-hidden">
           <Hero />
           <About />
           <Services />

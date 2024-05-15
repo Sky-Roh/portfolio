@@ -79,13 +79,13 @@ const Footer = () => {
       {/* ====================================================== */}
       {/* Footer */}
       <div className="w-[80%] mt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 sm:text-right">
-        <p className="text-[1.1rem] mb-[2rem] md:mb-0 text-white opacity-20 flex justify-end sm:justify-end md:justify-start">
-          WebDev 2023 | All Rights Reserved
+        <p className=" text-[1.1rem] mb-[2rem] md:mb-0 text-white opacity-40 flex justify-end sm:justify-end md:justify-start">
+          SKY.DEV 2023 | All Rights Reserved
         </p>
         <div className="flex items-center justify-end sm:justify-end md:justify-start lg:justify-end space-x-10">
-          <p className="text-[1rem] text-white opacity-20">Terms & Condition</p>
-          <p className="text-[1rem] text-white opacity-20">Privacy Policy</p>
-          <p className="text-[1rem] text-white opacity-20">Sitemap</p>
+          <p className="text-[1rem] text-white opacity-40">Terms & Condition</p>
+          <p className="text-[1rem] text-white opacity-40">Privacy Policy</p>
+          <p className="text-[1rem] text-white opacity-40">Sitemap</p>
         </div>
       </div>
     </div>

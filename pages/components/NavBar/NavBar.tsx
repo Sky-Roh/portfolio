@@ -1,6 +1,7 @@
 import React from "react";
 import MobileNavBar from "./MobileNavBar";
 import DesktopNavBar from "./DesktopNavBar";
+import Particle from "../Animations/Particles";
 
 interface Props {
   nav: boolean;
@@ -10,10 +11,11 @@ interface Props {
 
 const NavBar = ({ nav, openNav, closeNav }: Props) => {
   return (
-    <div>
+    <>
+      <Particle />
       <MobileNavBar nav={nav} closeNav={closeNav} />
       <DesktopNavBar openNav={openNav} />
-    </div>
+    </>
   );
 };
 

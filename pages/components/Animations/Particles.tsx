@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles-slim"; 
+import { loadSlim } from "tsparticles-slim";
 
 // https://github.com/tsparticles/react
 const Particle = () => {
@@ -29,6 +29,9 @@ const Particle = () => {
             //     value: "#0d47a1",
             //   },
           },
+
+          fullScreen: { enable: false },
+          /* all other options */
           fpsLimit: 120,
           interactivity: {
             events: {
@@ -91,6 +94,14 @@ const Particle = () => {
             },
           },
           detectRetina: true,
+        }}
+        style={{
+          position: "absolute",
+          width: "100vh",
+          height: "100vh",
+          top: 0,
+          left: 0,
+          zIndex: 1,
         }}
       />
     </div>
