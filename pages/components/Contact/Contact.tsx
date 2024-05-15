@@ -108,7 +108,6 @@ const Contact = () => {
     setErrors(newErrors);
     return isValid;
   };
-  console.log(Object.keys(errors));
 
   return (
     <div
@@ -231,7 +230,11 @@ const Contact = () => {
             )}
 
             {/* Submit button */}
-            <div className="flex justify-end">
+            <div
+              className={`flex justify-end ${
+                !errors.message && "lg:mt-6 mt-5"
+              }`}
+            >
               <button
                 type="submit"
                 className="bg-green-500 text-black px-4 py-2 rounded-md hover:bg-[#dfff00] transition-colors items-center"
