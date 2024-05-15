@@ -14,7 +14,7 @@ const DesktopNavBar = ({ openNav }: Props) => {
           href="/"
           className="flex-[0.6] cursor-pointer text-[1.5rem] text-white font-bold"
         >
-          WEB<span className="text-green-400">DEV</span>
+          SKY.<span className="text-green-400">DEV</span>
         </Link>
         <Link href="/" className="nav-link">
           Home

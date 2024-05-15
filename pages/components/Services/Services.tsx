@@ -3,14 +3,14 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div id="services" className="scroll-m-[14vh] xl:h-[88vh] h-[100%] xl:min-h-[46rem]  bg-[#121212] pt-[4rem] md:pt-[8rem] pb-[5rem]">
-      <p className="heading">
+    <div id="services" className="scroll-m-[14vh] h-[100%] xl:min-h-[46rem]  bg-[#121212] pt-[4rem] md:pt-[8rem] pb-[5rem]">
+      <p className="heading mb-9">
         My <span className="text-green-400">Services</span>
       </p>
       <div
         data-aos="fade-up"
         data-aos-delay="200"
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[80%] mx-auto items-center gap-[3rem] mt-[4rem] text-white"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[80%] mx-auto justify-center gap-[3rem] mt-[4rem] items-center text-white"
       >
         <div>
           <div className="bg-red-700 hover:scale-110 transform translate-all duration-200 hover:-rotate-6 uppercase font-semibold text-center p-[2rem]">

@@ -1,6 +1,5 @@
 import React from "react";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
-import Image from "next/legacy/image";
 import aboutImg from "../../../public/images/about-image-main.jpg";
 
 const About = () => {
@@ -29,14 +28,14 @@ const About = () => {
         </div>
         <div
           data-aos="fade-left"
-          className="relative lg:w-[30rem] lg:h-[30rem] sm:flex lg-mt-0 mx-auto md:mx-0 md:w-[18.2rem] md:h-[18.2rem] sm:w-[14rem] sm:h-[14rem] w-[10rem] h-[10rem] hidden "
+          className="relative lg:w-[30rem] lg:h-[30rem] sm:flex lg-mt-0 mx-auto md:mx-0 md:w-[18.2rem] md:h-[18.2rem] sm:w-[14rem] sm:h-[14rem] w-[10rem] h-[10rem] hidden"
         >
-          <Image
-            src={aboutImg}
+          <img
+            src={aboutImg.src}
             className="relative z-[20] w-full h-full object-cover" // Tailwind CSS utilities
             alt="user"
           />
-          <div className="absolute w-[100%] h-[100%] z-[10] bg-[#55e6a5] md:top-[-2rem] md:right-[-2rem]  top-[-1rem] right-[-1rem]"></div>
+          <div className="absolute w-[100%] h-[100%] z-[10] bg-[#55e6a5] md:top-[-2rem] md:right-[-2rem] top-[-1rem] right-[-1rem]"></div>
         </div>
       </div>
     </div>

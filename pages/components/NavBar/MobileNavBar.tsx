@@ -24,9 +24,9 @@ const MobileNavBar = ({ nav, closeNav }: Props) => {
 
   return (
     <div
-      className={`fixed ${navAnimation} transform inset-0 z-[1000000] bg-[#09101a] transition-all duration-200 md:hidden`}
+      className={`fixed ${navAnimation} overflow-auto transform inset-0 z-[1000000] bg-[#070b12] transition-all duration-200 md:hidden`}
     >
-      <div className="w-[100vw] h-[100vh] flex flex-col items-center justify-center">
+      <div className="w-[100vw] h-[100vh] min-h-[40rem] flex flex-col items-center justify-center">
         <Link onClick={closeNav} href="/" className="nav-link-mobile">
           Home
         </Link>
