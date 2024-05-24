@@ -49,9 +49,9 @@ const HomePage = () => {
         <div className="relative top-[14vh] overflow-x-hidden">
           <Hero />
           <About />
-          <Services />
           <Skills />
           <Projects />
+          <Services />
           <Contact />
           <Footer />
         </div>

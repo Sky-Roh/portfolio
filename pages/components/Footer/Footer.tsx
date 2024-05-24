@@ -48,7 +48,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/haneul-sky-roh/"
               className="text-[1rem] w-[90%] text-white opacity-60 hover:opacity-100"
             >
-              inkedin.com/in/haneul-sky-roh/
+              inkedin.com/in/haneul-sky-roh
             </Link>
           </div>
         </div>

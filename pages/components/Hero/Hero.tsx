@@ -19,15 +19,15 @@ const Hero = () => {
                 full-stack development. I create dynamic and interactive web
                 applications that provide a seamless user experience.
               </p>
-              <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">
+              <div className="mt-[2rem] sm:w-[14rem] w-[13rem]">
                 <a
                   href="https://drive.google.com/file/d/1f2_7WeB7kMADfInwT8b6qTpCmUGbnyUz/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-[2rem] hover:bg-green-400 transition-all duration-200 py-[1rem] text-[1rem] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2"
+                  className="w-[100%] px-[2rem] hover:bg-green-400 transition-all duration-200 py-[1rem] text-[0.9rem] sm:text-[1rem] font-bold uppercase bg-[#55e6a5] text-black flex  justify-between items-center space-x-2"
                 >
-                  <p>Download CV</p>
-                  <ArrowDownTrayIcon className="w-[1.6rem] h-[1.6rem] text-black" />
+                  <p className="flex-shrink-0">Download CV</p>
+                  <ArrowDownTrayIcon className="w-[1.4rem] h-[1.4rem] sm:w-[1.6rem] sm:h-[1.6rem] flex-shrink-0 text-black" />
                 </a>
               </div>
             </div>
