@@ -6,7 +6,7 @@ interface Props {
 const SkillsLanguage = ({ skill, level }: Props) => {
   return (
     <div>
-      <div className="relative mb-[3rem]">
+      <div className="relative mb-[2rem]">
         <h1 className="p-5 w-[100%] uppercase bg-gray-800 rounded-sm text-white text-[1.4rem] font-bold">
           {skill}
         </h1>
