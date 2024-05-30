@@ -37,7 +37,7 @@ const MobileNavBar = ({ nav, closeNav }: Props) => {
           Skills
         </Link>
         <Link onClick={closeNav} href="#projects" className="nav-link-mobile">
-          Project
+          Projects
         </Link>
         <Link onClick={closeNav} href="#services" className="nav-link-mobile">
           Services

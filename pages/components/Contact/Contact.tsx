@@ -129,8 +129,9 @@ const Contact = () => {
             <span className="w-12 hidden md:block h-1 bg-slate-400 rounded-sm"></span>
             <p className="text-lg text-slate-300">
               Thank you for your interest and support. If you have any questions
-              or would like to get in touch, please fill out the form below or
-              reach out directly.
+              or would like to get in touch, please fill out the form below, and
+              I will get back to you. Alternatively, you can reach out to me
+              directly via email or LinkedIn.
             </p>
           </div>
         </div>

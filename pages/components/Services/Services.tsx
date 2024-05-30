@@ -24,7 +24,7 @@ const Services = () => {
             </h1>
             <p className="text-[1rem] text-[#d3d2d2]">
               I create beautiful and interactive websites that look great on any
-              device. Using the latest technologies like React. I ensure your
+              device. Using the latest technologies like React, I ensure your
               site is fast, responsive, and a joy to use.
             </p>
           </div>

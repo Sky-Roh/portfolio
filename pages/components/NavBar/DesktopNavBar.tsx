@@ -26,7 +26,7 @@ const DesktopNavBar = ({ openNav }: Props) => {
           Skills
         </Link>
         <Link href="#projects" className="nav-link">
-          Project
+          Projects
         </Link>
         <Link href="#services" className="nav-link">
           Services

@@ -19,7 +19,7 @@ const Footer = () => {
           </Link>
           <div className="w-full">
             <h1 className="text-[1.5rem] mb-[0.2rem] font-semibold text-white">
-              Github
+              GitHub
             </h1>
             <Link
               href="https://github.com/Sky-Roh"
