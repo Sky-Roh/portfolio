@@ -38,7 +38,7 @@ const Services = () => {
             </h1>
             <p className="text-[1rem] text-[#d3d2d2]">
               I build the backbone of your web applications with reliable and
-              efficient server-side solutions. Using Node.js, Express, Databases
+              efficient server-side solutions. Using Node.js, Express, And databases
               I handle everything from database management to API development.
             </p>
           </div>
