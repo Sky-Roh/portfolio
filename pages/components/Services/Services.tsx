@@ -3,7 +3,10 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div id="services" className="scroll-m-[14vh] h-[100%] xl:min-h-[46rem]  bg-[#121212] pt-[4rem] md:pt-[8rem] pb-[5rem]">
+    <div
+      id="services"
+      className="scroll-m-[14vh] h-[100%] xl:min-h-[46rem]  bg-[#121212] pt-[4rem] md:pt-[8rem] pb-[5rem]"
+    >
       <p className="heading mb-9">
         My <span className="text-green-400">Services</span>
       </p>
@@ -20,10 +23,9 @@ const Services = () => {
               Frontend
             </h1>
             <p className="text-[1rem] text-[#d3d2d2]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-              expedita sunt suscipit earum dolore ipsum, minus, itaque hic vel
-              qui recusandae saepe, voluptas iusto natus. Quia ab optio adipisci
-              mollitia.
+              I create beautiful and interactive websites that look great on any
+              device. Using the latest technologies like React. I ensure your
+              site is fast, responsive, and a joy to use.
             </p>
           </div>
         </div>
@@ -35,10 +37,9 @@ const Services = () => {
               Backend
             </h1>
             <p className="text-[1rem] text-[#d3d2d2]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-              expedita sunt suscipit earum dolore ipsum, minus, itaque hic vel
-              qui recusandae saepe, voluptas iusto natus. Quia ab optio adipisci
-              mollitia.
+              I build the backbone of your web applications with reliable and
+              efficient server-side solutions. Using Node.js, Express, Databases
+              I handle everything from database management to API development.
             </p>
           </div>
         </div>
@@ -50,10 +51,10 @@ const Services = () => {
               Fullstack
             </h1>
             <p className="text-[1rem] text-[#d3d2d2]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-              expedita sunt suscipit earum dolore ipsum, minus, itaque hic vel
-              qui recusandae saepe, voluptas iusto natus. Quia ab optio adipisci
-              mollitia.
+              Need someone who can do it all? I combine frontend and backend
+              skills to create complete web applications from start to finish.
+              From designing the user interface to setting up the server, I've
+              got you covered.
             </p>
           </div>
         </div>
