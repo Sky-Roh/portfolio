@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 import aboutImg from "../../../public/images/about-image-main.jpg";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -21,8 +22,8 @@ const About = () => {
             <p className="text-[1.2rem] text-slate-300 w-[80%]">
               I&apos;m a full stack developer passionate about web development,
               transforming ideas into user-friendly solutions. With experience
-              in front-end and back-end, I&apos;ve created intuitive dashboards. I
-              thrive on tackling challenges and continuously learning new
+              in front-end and back-end, I&apos;ve created intuitive dashboards.
+              I thrive on tackling challenges and continuously learning new
               technologies. Let&apos;s connect and bring your vision to life.
             </p>
           </div>
@@ -31,10 +32,12 @@ const About = () => {
           data-aos="fade-left"
           className="relative lg:w-[30rem] lg:h-[30rem] sm:flex lg-mt-0 mx-auto md:mx-0 md:w-[18.2rem] md:h-[18.2rem] sm:w-[14rem] sm:h-[14rem] w-[10rem] h-[10rem] hidden"
         >
-          <img
-            src={aboutImg.src}
+          <Image
+            src={aboutImg}
             className="relative z-[20] w-full h-full object-cover" // Tailwind CSS utilities
             alt="user"
+            layout="fill"
+            objectFit="cover"
           />
           <div className="absolute w-[100%] h-[100%] z-[10] bg-[#55e6a5] md:top-[-2rem] md:right-[-2rem] top-[-1rem] right-[-1rem]"></div>
         </div>
