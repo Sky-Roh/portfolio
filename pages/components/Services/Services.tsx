@@ -53,7 +53,7 @@ const Services = () => {
             <p className="text-[1rem] text-[#d3d2d2]">
               Need someone who can do it all? I combine frontend and backend
               skills to create complete web applications from start to finish.
-              From designing the user interface to setting up the server, I've
+              From designing the user interface to setting up the server, I&apos;ve
               got you covered.
             </p>
           </div>
