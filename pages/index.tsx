@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Head from "next/head";
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
@@ -41,22 +42,28 @@ const HomePage = () => {
   }, []);
 
   return (
-    <main className="box-border">
-      <section>
-        {/* NavBar */}
-        <NavBar nav={navMenu} openNav={openNavMenu} closeNav={closeNavMenu} />
-        {/* Components */}
-        <div className="relative top-[14vh] overflow-x-hidden">
-          <Hero />
-          <About />
-          <Skills />
-          <Projects />
-          <Services />
-          <Contact />
-          <Footer />
-        </div>
-      </section>
-    </main>
+    <>
+      <Head>
+        <title>SKY.DEV PORTFOLIO</title>
+      </Head>
+
+      <main className="box-border">
+        <section>
+          {/* NavBar */}
+          <NavBar nav={navMenu} openNav={openNavMenu} closeNav={closeNavMenu} />
+          {/* Components */}
+          <div className="relative top-[14vh] overflow-x-hidden">
+            <Hero />
+            <About />
+            <Skills />
+            <Projects />
+            <Services />
+            <Contact />
+            <Footer />
+          </div>
+        </section>
+      </main>
+    </>
   );
 };
 
