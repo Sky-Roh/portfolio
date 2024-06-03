@@ -19,11 +19,11 @@ const About = () => {
           <div className="mb-[3rem] flex items-center md:space-x-10">
             <span className="w-[100px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
             <p className="text-[1.2rem] text-slate-300 w-[80%]">
-              I'm a full stack developer passionate about web development,
+              I&apos;m a full stack developer passionate about web development,
               transforming ideas into user-friendly solutions. With experience
-              in front-end and back-end, I've created intuitive dashboards. I
+              in front-end and back-end, I&apos;ve created intuitive dashboards. I
               thrive on tackling challenges and continuously learning new
-              technologies. Let's connect and bring your vision to life.
+              technologies. Let&apos;s connect and bring your vision to life.
             </p>
           </div>
         </div>
