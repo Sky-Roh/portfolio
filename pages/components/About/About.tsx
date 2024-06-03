@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 import aboutImg from "../../../public/images/about-image-main.jpg";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const About = () => {
   return (
@@ -34,7 +34,7 @@ const About = () => {
         >
           <Image
             src={aboutImg}
-            className="relative z-[20] w-full h-full object-cover" // Tailwind CSS utilities
+            className="relative z-[20] w-full h-full object-cover"
             alt="user"
             layout="fill"
             objectFit="cover"

@@ -1,6 +1,7 @@
 import { EnvelopeIcon, MapIcon, PhoneIcon } from "@heroicons/react/20/solid";
 import React from "react";
 import Link from "next/link";
+import Image from "next/legacy/image";
 
 const Footer = () => {
   return (
@@ -11,11 +12,15 @@ const Footer = () => {
             href="https://github.com/Sky-Roh"
             className="lg:w-[6.5rem] lg:h-[6.5rem] md:w-[5rem] md:h-[5rem] w-[4rem] h-[4rem] flex items-center justify-center flex-shrink-0 rounded-full bg-[#55e6a5] hover:bg-[#fe9c9c]"
           >
-            <img
-              src="/icons/github.svg"
-              alt="Github"
-              className="lg:w-[4rem] lg:h-[4rem] md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] text-black"
-            />
+            <div className="relative lg:w-[4rem] lg:h-[4rem] md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem]">
+              <Image
+                src="/icons/github.svg"
+                alt="Github"
+                width={64}
+                height={64}
+                className="text-black"
+              />
+            </div>
           </Link>
           <div className="w-full">
             <h1 className="text-[1.5rem] mb-[0.2rem] font-semibold text-white">
@@ -34,11 +39,15 @@ const Footer = () => {
             href="https://www.linkedin.com/in/haneul-sky-roh/"
             className="lg:w-[6.5rem] lg:h-[6.5rem] md:w-[5rem] md:h-[5rem] w-[4rem] h-[4rem] flex items-center justify-center flex-shrink-0 rounded-full bg-[#55e6a5] hover:bg-[#FAFF67]"
           >
-            <img
-              src="/icons/linkedin.svg"
-              alt="LinkedIn"
-              className="lg:w-[4rem] lg:h-[4rem] md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] text-black"
-            />
+            <div className="relative lg:w-[4rem] lg:h-[4rem] md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem]">
+              <Image
+                src="/icons/linkedin.svg"
+                alt="LinkedIn"
+                width={64}
+                height={64}
+                className=" text-black"
+              />
+            </div>
           </Link>
           <div className="w-full">
             <h1 className="text-[1.5rem] mb-[0.2rem] font-semibold text-white">
@@ -57,11 +66,15 @@ const Footer = () => {
             href="mailto:haneul.sky.roh@gmail.com"
             className="lg:w-[6.5rem] lg:h-[6.5rem] md:w-[5rem] md:h-[5rem] w-[4rem] h-[4rem] flex items-center justify-center flex-shrink-0 rounded-full bg-[#55e6a5]  hover:bg-[#67bdff]"
           >
-            <img
-              src="/icons/envelope-at-fill.svg"
-              alt="Email"
-              className="lg:w-[4rem] lg:h-[4rem] md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] text-black"
-            />
+            <div className="relative lg:w-[4rem] lg:h-[4rem] md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem]">
+              <Image
+                src="/icons/envelope-at-fill.svg"
+                alt="Email"
+                width={64}
+                height={64}
+                className=" text-black"
+              />
+            </div>
           </Link>
           <div className="w-full">
             <h1 className="text-[1.5rem] mb-[0.2rem]  font-semibold text-white">
@@ -83,7 +96,9 @@ const Footer = () => {
           SKY.DEV 2023 | All Rights Reserved
         </p>
         <div className="flex items-center justify-end sm:justify-end md:justify-start lg:justify-end space-x-10">
-          <p className="text-[1rem] text-white opacity-40">Terms & Conditions</p>
+          <p className="text-[1rem] text-white opacity-40">
+            Terms & Conditions
+          </p>
           <p className="text-[1rem] text-white opacity-40">Privacy Policy</p>
           <p className="text-[1rem] text-white opacity-40">Sitemap</p>
         </div>

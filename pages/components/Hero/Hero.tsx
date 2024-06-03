@@ -2,6 +2,7 @@ import React from "react";
 import TypeAnimationEffect from "../Animations/TypeAnimationEffect";
 import ProfileImg from "../../../public/images/profile-image.jpg";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
+import Image from "next/legacy/image";
 
 const Hero = () => {
   return (
@@ -35,10 +36,12 @@ const Hero = () => {
               data-aos="zoom-in"
               className="z-[1] w-[28rem] h-[28rem] hidden lg:flex items-center mx-auto rounded-full bg-[#55e6a5] relative"
             >
-              <img
+              <Image
                 src={ProfileImg.src}
-                className="w-full h-auto object-cover rounded-full"
                 alt="Profile Image"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-full"
               />
             </div>
           </div>
