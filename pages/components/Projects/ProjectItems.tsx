@@ -9,7 +9,7 @@ interface Props {
   description: string;
   techIcons: string[];
   githubLink: string;
-  webLink: string;
+  webLink?: string;
 }
 
 const ProjectItems = ({
@@ -67,19 +67,21 @@ const ProjectItems = ({
             />
           </div>
         </Link>
-        <Link
-          href={webLink}
-          className="mb-[1rem] w-[3rem] h-[3rem] flex items-center justify-center flex-shrink-0 hover:flip"
-        >
-          <div className="relative w-[2.8rem] h-[2.8rem] flex items-center justify-center">
-            <Image
-              src="/icons/link-45deg.svg"
-              alt="Link"
-              width={30}
-              height={30}
-            />
-          </div>
-        </Link>
+        {webLink && (
+          <Link
+            href={webLink}
+            className="mb-[1rem] w-[3rem] h-[3rem] flex items-center justify-center flex-shrink-0 hover:flip"
+          >
+            <div className="relative w-[2.8rem] h-[2.8rem] flex items-center justify-center">
+              <Image
+                src="/icons/link-45deg.svg"
+                alt="Link"
+                width={30}
+                height={30}
+              />
+            </div>
+          </Link>
+        )}
       </div>
     </div>
   );
