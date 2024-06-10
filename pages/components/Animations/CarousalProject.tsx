@@ -85,7 +85,6 @@ const CarousalProject = () => {
           description="This is a project I made when I was studying at BrainStation."
           techIcons={techIconChromeEx}
           githubLink="https://github.com/Sky-Roh/chrome-ex-amz"
-          webLink=""
         />
       </div>
       <div>
@@ -96,7 +95,6 @@ const CarousalProject = () => {
           description="This is a project I made when I was studying at BrainStation."
           techIcons={techIconsVistaVid}
           githubLink="https://github.com/Sky-Roh/vistavid-frontend"
-          webLink=""
         />
       </div>
     </Carousel>
