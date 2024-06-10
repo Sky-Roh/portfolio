@@ -17,7 +17,7 @@ const ProjectItems = ({
   name,
   title,
   description,
-  techIcons,
+  techIcons = [],
   githubLink,
   webLink,
 }: Props) => {
