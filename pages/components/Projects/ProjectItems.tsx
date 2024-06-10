@@ -54,19 +54,21 @@ const ProjectItems = ({
         ))}
       </div>
       <div className="flex space-x-1 w-[80%] justify-end">
-        <Link
-          href={githubLink}
-          className="mb-[1rem] w-[3rem] h-[3rem] flex items-center justify-center flex-shrink-0 hover:flip"
-        >
-          <div className="relative w-[2.8rem] h-[2.8rem] flex items-center justify-center">
-            <Image
-              src="/icons/github-white.svg"
-              alt="Github"
-              width={30}
-              height={30}
-            />
-          </div>
-        </Link>
+        {githubLink && (
+          <Link
+            href={githubLink}
+            className="mb-[1rem] w-[3rem] h-[3rem] flex items-center justify-center flex-shrink-0 hover:flip"
+          >
+            <div className="relative w-[2.8rem] h-[2.8rem] flex items-center justify-center">
+              <Image
+                src="/icons/github-white.svg"
+                alt="Github"
+                width={30}
+                height={30}
+              />
+            </div>
+          </Link>
+        )}
         {webLink && (
           <Link
             href={webLink}
