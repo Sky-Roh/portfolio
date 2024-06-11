@@ -67,7 +67,7 @@ const ProjectItems = ({
           {description}
         </p>
       </div>
-      <div className="flex flex-wrap gap-3 w-[90%] justify-center">
+      <div className="flex flex-wrap gap-3 w-[80%] justify-center">
         {techIcons.map((icon, index) => (
           <div
             key={index}
