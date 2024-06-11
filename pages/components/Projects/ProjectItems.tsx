@@ -32,7 +32,7 @@ const ProjectItems = ({
           objectFit="contain"
           className="mx-auto mb-[2rem] rounded-md transition-opacity duration-300 group-hover:opacity-50"
         />
-        <div className="absolute inset-0 flex items-     justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <div className="flex space-x-4">
             {githubLink && (
               <Link href={githubLink}>
