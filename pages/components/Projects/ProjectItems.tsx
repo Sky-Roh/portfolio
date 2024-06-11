@@ -23,21 +23,51 @@ const ProjectItems = ({
 }: Props) => {
   return (
     <div className="flex flex-col text-center justify-center items-center">
-      <Image
-        src={image}
-        alt={name}
-        width={895} // Adjust width
-        height={300} // Adjust height
-        objectFit="contain"
-        className="mx-auto mb-[2rem] rounded-md"
-      />
+      <div className="relative group">
+        <Image
+          src={image}
+          alt={name}
+          width={895} // Adjust width
+          height={300} // Adjust height
+          objectFit="contain"
+          className="mx-auto mb-[2rem] rounded-md"
+        />
+        <div className="absolute inset-0 flex items-end mb-[2rem] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div className="flex space-x-4">
+            {githubLink && (
+              <Link href={githubLink}>
+                <div className="w-[3rem] h-[3rem] flex items-center justify-center bg-zinc-200 rounded-full">
+                  <Image
+                    src="/icons/github.svg"
+                    alt="Github"
+                    width={30}
+                    height={30}
+                  />
+                </div>
+              </Link>
+            )}
+            {webLink && (
+              <Link href={webLink}>
+                <div className="w-[3rem] h-[3rem] flex items-center justify-center bg-zinc-200 rounded-full">
+                  <Image
+                    src="/icons/link-45deg.svg"
+                    alt="Link"
+                    width={30}
+                    height={30}
+                  />
+                </div>
+              </Link>
+            )}
+          </div>
+        </div>
+      </div>
       <div>
         <h1 className="text-[1.5rem] text-white mt-[1rem]">{title}</h1>
         <p className="text-white opacity-75 mt-[0.5rem] mb-[1.4rem]">
           {description}
         </p>
       </div>
-      <div className="flex flex-wrap gap-3 w-[80%] justify-center">
+      <div className="flex flex-wrap gap-3 w-[90%] justify-center">
         {techIcons.map((icon, index) => (
           <div
             key={index}
@@ -52,38 +82,6 @@ const ProjectItems = ({
             />
           </div>
         ))}
-      </div>
-      <div className="flex space-x-1 w-[80%] justify-end">
-        {githubLink && (
-          <Link
-            href={githubLink}
-            className="mb-[1rem] w-[3rem] h-[3rem] flex items-center justify-center flex-shrink-0 hover:flip"
-          >
-            <div className="relative w-[2.8rem] h-[2.8rem] flex items-center justify-center">
-              <Image
-                src="/icons/github-white.svg"
-                alt="Github"
-                width={30}
-                height={30}
-              />
-            </div>
-          </Link>
-        )}
-        {webLink && (
-          <Link
-            href={webLink}
-            className="mb-[1rem] w-[3rem] h-[3rem] flex items-center justify-center flex-shrink-0 hover:flip"
-          >
-            <div className="relative w-[2.8rem] h-[2.8rem] flex items-center justify-center">
-              <Image
-                src="/icons/link-45deg.svg"
-                alt="Link"
-                width={30}
-                height={30}
-              />
-            </div>
-          </Link>
-        )}
       </div>
     </div>
   );

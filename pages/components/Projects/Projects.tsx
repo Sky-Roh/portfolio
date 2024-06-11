@@ -14,7 +14,7 @@ const Projects = () => {
       <h1 className="heading">
         Pro<span className="text-green-400">Jects</span>
       </h1>
-      <div className="pt-[5rem] pb-[4rem] w-[80%] mx-auto">
+      <div className="pt-[5rem] pb-[4rem] w-[90%] mx-auto">
         <CarousalProject />
       </div>
     </div>

@@ -66,7 +66,6 @@ const CarousalProject = () => {
       itemClass="item"
       data-aos="fade-up"
     >
-      <div>
         <ProjectItems
           image={project1Img.src}
           name="climbstation"
@@ -76,8 +75,7 @@ const CarousalProject = () => {
           githubLink="https://github.com/Sky-Roh/climbing-capstone-client"
           webLink="https://climb-station.netlify.app"
         />
-      </div>
-      <div>
+
         <ProjectItems
           image={chromeEx.src}
           name="ChromeExtension"
@@ -86,8 +84,7 @@ const CarousalProject = () => {
           techIcons={techIconChromeEx}
           githubLink="https://github.com/Sky-Roh/chrome-ex-amz"
         />
-      </div>
-      <div>
+
         <ProjectItems
           image={vistavid.src}
           name="vistavid"
@@ -96,7 +93,6 @@ const CarousalProject = () => {
           techIcons={techIconsVistaVid}
           githubLink="https://github.com/Sky-Roh/vistavid-frontend"
         />
-      </div>
     </Carousel>
   );
 };
