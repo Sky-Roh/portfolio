@@ -23,20 +23,20 @@ const ProjectItems = ({
 }: Props) => {
   return (
     <div className="flex flex-col text-center justify-center items-center">
-      <div className="relative group">
+      <div className="relative group w-full h-full">
         <Image
           src={image}
           alt={name}
           width={895} // Adjust width
           height={300} // Adjust height
           objectFit="contain"
-          className="mx-auto mb-[2rem] rounded-md"
+          className="mx-auto mb-[2rem] rounded-md transition-opacity duration-300 group-hover:opacity-50"
         />
-        <div className="absolute inset-0 flex items-end mb-[2rem] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div className="absolute inset-0 flex items-     justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <div className="flex space-x-4">
             {githubLink && (
               <Link href={githubLink}>
-                <div className="w-[3rem] h-[3rem] flex items-center justify-center bg-zinc-200 rounded-full">
+                <div className="w-[3rem] h-[3rem] flex items-center justify-center bg-zinc-200 rounded-full hover:bg-opacity-75">
                   <Image
                     src="/icons/github.svg"
                     alt="Github"
@@ -48,7 +48,7 @@ const ProjectItems = ({
             )}
             {webLink && (
               <Link href={webLink}>
-                <div className="w-[3rem] h-[3rem] flex items-center justify-center bg-zinc-200 rounded-full">
+                <div className="w-[3rem] h-[3rem] flex items-center justify-center bg-zinc-200 rounded-full hover:bg-opacity-75">
                   <Image
                     src="/icons/link-45deg.svg"
                     alt="Link"
