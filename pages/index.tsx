@@ -44,7 +44,7 @@ const HomePage = () => {
   return (
     <>
       <Head>
-        <title>SKY.DEV PORTFOLIO</title>
+        <title>SKYDEV PORTFOLIO</title>
       </Head>
 
       <main className="box-border">
