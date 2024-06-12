@@ -12,7 +12,7 @@ const SkillsLanguage = ({ skill, techIcon, level }: Props) => {
       <div className="relative mb-[2rem]">
         <div className="flex p-5 w-[100%] uppercase bg-gray-700 rounded-sm text-white text-[1.4rem] font-bold">
           {techIcon && (
-            <div className="px-3">
+            <div className="px-3 flex items-center justify-center">
               <Image
                 src={techIcon}
                 alt={`Tech Icon`}

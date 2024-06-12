@@ -33,7 +33,22 @@ const Skills = () => {
           />
         </div>
         {/* Languages */}
-        <div className="w-[80%] pt-[4rem] md:pt-[rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-center">
+        <div className="w-[80%] pt-[4rem] md:pt-[rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 items-center">
+          <SkillsLanguage
+            skill="React"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+            level="w-[95%]"
+          />
+          <SkillsLanguage
+            skill="JavaScript"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+            level="w-[99%]"
+          />
+          <SkillsLanguage
+            skill="TypeScript"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+            level="w-[75%]"
+          />
           <SkillsLanguage
             skill="html"
             techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
@@ -50,24 +65,64 @@ const Skills = () => {
             level="w-[85%]"
           />
           <SkillsLanguage
-            skill="JavaScript"
-            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-            level="w-[99%]"
-          />
-          <SkillsLanguage
-            skill="React"
-            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+            skill="C"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"
             level="w-[95%]"
           />
           <SkillsLanguage
-            skill="TypeScript"
-            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
-            level="w-[75%]"
+            skill="C++"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+            level="w-[60%]"
+          />
+          <SkillsLanguage
+            skill="Python"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+            level="w-[45%]"
+          />
+          <SkillsLanguage
+            skill="MUI"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg"
+            level="w-[95%]"
+          />
+          <SkillsLanguage
+            skill="Tailwind"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg"
+            level="w-[95%]"
           />
           <SkillsLanguage
             skill="Node.js"
             techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
             level="w-[95%]"
+          />
+          <SkillsLanguage
+            skill="Next.js"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg"
+            level="w-[75%]"
+          />
+          <SkillsLanguage
+            skill="Git"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg"
+            level="w-[95%]"
+          />
+          <SkillsLanguage
+            skill="MogoDB"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+            level="w-[75%]"
+          />
+          <SkillsLanguage
+            skill="Prisma"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/prisma/prisma-original.svg"
+            level="w-[65%]"
+          />
+          <SkillsLanguage
+            skill="Sequelize"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/sequelize/sequelize-original.svg"
+            level="w-[95%]"
+          />
+          <SkillsLanguage
+            skill="OracleSQL"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg"
+            level="w-[75%]"
           />
           <SkillsLanguage
             skill="MySQL"

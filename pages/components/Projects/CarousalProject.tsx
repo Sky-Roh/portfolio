@@ -55,6 +55,13 @@ const CarousalProject = () => {
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/googlecloud/googlecloud-original.svg",
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg",
   ];
+
+  const techIconPortfolio = [
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
+    "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg",
+  ];
   return (
     <Carousel
       additionalTransfrom={0}
@@ -100,7 +107,7 @@ const CarousalProject = () => {
         name="portfolio"
         title="Portfolio"
         description="Portfolio Website."
-        techIcons={techIconsVistaVid}
+        techIcons={techIconPortfolio}
         githubLink="https://github.com/Sky-Roh/portfolio"
         webLink="https://portfolio-sky-dev.netlify.app"
       />
