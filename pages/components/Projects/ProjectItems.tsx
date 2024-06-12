@@ -22,7 +22,7 @@ const ProjectItems = ({
   webLink,
 }: Props) => {
   return (
-    <div className="flex flex-col text-center justify-center items-center">
+    <div className="flex flex-col text-center justify-center items-center my-7">
       <div className="relative group w-full h-full">
         <Image
           src={image}

@@ -32,16 +32,53 @@ const Skills = () => {
             content="MDE Dashboard Project."
           />
         </div>
+        {/* Languages */}
         <div className="w-[80%] pt-[4rem] md:pt-[rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-center">
-          <SkillsLanguage skill="html" level="w-[85%]" />
-          <SkillsLanguage skill="css" level="w-[85%]" />
-          <SkillsLanguage skill="JavaScript" level="w-[85%]" />
-          <SkillsLanguage skill="React" level="w-[85%]" />
-          <SkillsLanguage skill="TypeScript" level="w-[85%]" />
-          <SkillsLanguage skill="Node.js" level="w-[85%]" />
-          <SkillsLanguage skill="SQL" level="w-[85%]" />
-          <SkillsLanguage skill="MySQL" level="w-[85%]" />
-          <SkillsLanguage skill="PostgreSQL" level="w-[85%]" />
+          <SkillsLanguage
+            skill="html"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+            level="w-[95%]"
+          />
+          <SkillsLanguage
+            skill="css"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+            level="w-[95%]"
+          />
+          <SkillsLanguage
+            skill="sass"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
+            level="w-[85%]"
+          />
+          <SkillsLanguage
+            skill="JavaScript"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+            level="w-[99%]"
+          />
+          <SkillsLanguage
+            skill="React"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+            level="w-[95%]"
+          />
+          <SkillsLanguage
+            skill="TypeScript"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+            level="w-[75%]"
+          />
+          <SkillsLanguage
+            skill="Node.js"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+            level="w-[95%]"
+          />
+          <SkillsLanguage
+            skill="MySQL"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
+            level="w-[75%]"
+          />
+          <SkillsLanguage
+            skill="PostgreSQL"
+            techIcon="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg"
+            level="w-[95%]"
+          />
         </div>
       </div>
     </div>
