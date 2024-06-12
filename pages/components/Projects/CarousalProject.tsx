@@ -84,7 +84,6 @@ const CarousalProject = () => {
         githubLink="https://github.com/Sky-Roh/climbing-capstone-client"
         webLink="https://climb-station.netlify.app"
       />
-
       <ProjectItems
         image={chromeEx.src}
         name="ChromeExtension"
@@ -93,7 +92,6 @@ const CarousalProject = () => {
         techIcons={techIconChromeEx}
         githubLink="https://github.com/Sky-Roh/chrome-ex-amz"
       />
-
       <ProjectItems
         image={vistavid.src}
         name="vistavid"
