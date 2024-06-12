@@ -4,6 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import project1Img from "../../../public/images/ClimbStation.png";
 import chromeEx from "../../../public/images/chrome-ex-1.png";
 import vistavid from "../../../public/images/vistavid.png";
+import portfolioApp from "../../../public/images/portfolio.png";
 import ProjectItems from "./ProjectItems";
 
 const CarousalProject = () => {
@@ -34,7 +35,6 @@ const CarousalProject = () => {
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg",
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/sequelize/sequelize-original.svg",
   ];
-
 
   const techIconsVistaVid = [
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
@@ -94,6 +94,15 @@ const CarousalProject = () => {
         description="A video streaming app with video uploading capabilities."
         techIcons={techIconsVistaVid}
         githubLink="https://github.com/Sky-Roh/vistavid-frontend"
+      />
+      <ProjectItems
+        image={portfolioApp.src}
+        name="portfolio"
+        title="Portfolio"
+        description="Portfolio Website."
+        techIcons={techIconsVistaVid}
+        githubLink="https://github.com/Sky-Roh/portfolio"
+        webLink="https://portfolio-sky-dev.netlify.app"
       />
     </Carousel>
   );
