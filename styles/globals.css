@@ -18,7 +18,6 @@
       transition: transform 1.4s;
       transform-style: preserve-3d;
     }
-  
     .flip:hover {
       transform: rotateY(180deg);
     }
